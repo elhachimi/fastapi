@@ -12,7 +12,7 @@ On macOS, you can install it with [Homebrew](https://brew.sh/):
 brew install uv
 ```
 
-For Anass, you can install it with [Winget](https://winstall.app/apps/astral-sh.uv):
+For Anass 🍑, you can install it with [Winget](https://winstall.app/apps/astral-sh.uv):
 
 ```bash
 winget install --id=astral-sh.uv  -e
