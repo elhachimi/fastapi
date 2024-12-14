@@ -89,3 +89,15 @@ We use [SQLAlchemy](https://www.sqlalchemy.org/) as the ORM.
 ### 🚀 FastAPI
 
 We use [FastAPI](https://fastapi.tiangolo.com/) as the web framework.
+
+---
+
+# 📋 TODOs
+
+[] 📝 Tests
+[] Pytest
+[] Coverage
+
+[] 🐳 Docker
+[] Dockerfile
+[] docker-compose
