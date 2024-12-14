@@ -79,3 +79,5 @@ To run the first migration, run:
 ```bash
 uv run alembic upgrade head
 ```
+
+---
