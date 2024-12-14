@@ -94,17 +94,17 @@ We use [FastAPI](https://fastapi.tiangolo.com/) as the web framework.
 
 # 📋 TODOs
 
-[ ] 📝 Tests
+📝 Tests
 
 - - [ ] Pytest
 - - [ ] Coverage
 
-[ ] 🐳 Docker
+🐳 Docker
 
 - - [ ] Dockerfile
 - - [ ] docker-compose
 
-[ ] 📁 Project structure
+📁 Project structure
 
 - [ ] 📁 backend
 - [ ] 📁 frontend
