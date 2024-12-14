@@ -38,6 +38,8 @@ uv run fastapi dev main.py
 
 The server will be running at [http://localhost:8000](http://localhost:8000).
 
+---
+
 ### 🐘 Database migrations
 
 We use [Alembic](https://alembic.sqlalchemy.org/en/latest/) for database migrations.
@@ -80,4 +82,10 @@ To run the first migration, run:
 uv run alembic upgrade head
 ```
 
----
+### ORM
+
+We use [SQLAlchemy](https://www.sqlalchemy.org/) as the ORM.
+
+### 🚀 FastAPI
+
+We use [FastAPI](https://fastapi.tiangolo.com/) as the web framework.
