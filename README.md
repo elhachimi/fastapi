@@ -37,3 +37,45 @@ uv run fastapi dev main.py
 ```
 
 The server will be running at [http://localhost:8000](http://localhost:8000).
+
+### 🐘 Database migrations
+
+We use [Alembic](https://alembic.sqlalchemy.org/en/latest/) for database migrations.
+
+To create a new migration, run:
+
+```bash
+uv run alembic revision -m "Add users table"
+```
+
+A new file will be generated: `alembic/versions/<revision_id>_add_users_table.py`.
+
+```python
+"""create account table
+
+Revision ID: 1975ea83b712
+Revises:
+Create Date: 2011-11-08 11:40:27.089406
+
+"""
+
+# revision identifiers, used by Alembic.
+revision = '1975ea83b712'
+down_revision = None
+branch_labels = None
+
+from alembic import op
+import sqlalchemy as sa
+
+def upgrade():
+    pass
+
+def downgrade():
+    pass
+```
+
+To run the first migration, run:
+
+```bash
+uv run alembic upgrade head
+```

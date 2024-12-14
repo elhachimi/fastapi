@@ -21,7 +21,7 @@ def get_db():
 @app.get("/")
 def home(request: Request, db: Session = Depends(get_db)):
     todos = db.query(models.Todo).all()
-    return {"Hello": todos}
+    return {"todos": todos}
 
 
 @app.post("/todos")
