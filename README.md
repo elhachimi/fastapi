@@ -33,7 +33,7 @@ uv run alembic upgrade head
 To start the local server, run:
 
 ```bash
-uv run fastapi dev main.py
+uv run fastapi dev src/main.py
 ```
 
 The server will be running at [http://localhost:8000](http://localhost:8000).
