@@ -1,6 +1,7 @@
 from datetime import datetime
 from typing import Optional, List
-from src.api.modules.models import Post
+
+from ..posts.models import Post
 
 from sqlmodel import SQLModel, Field, Relationship
 

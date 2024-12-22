@@ -6,6 +6,7 @@ from sqlmodel import Session, select
 from fastapi import APIRouter
 
 from database.session import get_session
+from ..users.models import User
 from .models import Post
 
 
