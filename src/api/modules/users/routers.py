@@ -1,4 +1,4 @@
-from database.session import get_session
+from ....database.session import get_session
 from fastapi import APIRouter
 from sqlmodel import Session
 from fastapi import Depends
