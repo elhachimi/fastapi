@@ -37,6 +37,9 @@ uv run fastapi dev src/main.py
 ```
 
 The server will be running at [http://localhost:8000](http://localhost:8000).
+The documentation will be available at [http://localhost:8000/docs](http://localhost:8000/docs).
+The redoc will be available at [http://localhost:8000/redoc](http://localhost:8000/redoc).
+The openapi.json will be available at [http://localhost:8000/openapi.json](http://localhost:8000/openapi.json).
 
 ---
 
@@ -106,5 +109,10 @@ We use [FastAPI](https://fastapi.tiangolo.com/) as the web framework.
 
 📁 Project structure
 
-- [ ] 📁 backend
-- [ ] 📁 frontend
+- - [ ] 📁 backend
+- - [ ] 📁 frontend
+
+🔧 OpenAPI
+
+- - [ ] Code generation
+- - [ ] Frontend integration
