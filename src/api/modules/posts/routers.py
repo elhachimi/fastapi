@@ -72,4 +72,7 @@ def delete_post(post_id: int, session: Session = Depends(get_session)) -> Post:
 def list_posts(session: Session = Depends(get_session)):
     statement = select(Post)
     posts = session.exec(statement).all()
-    return [{**post.dict(), "user": post.user} for post in posts]
+    return [
+        {**post.dict(), "user": post.user, "comments_count": len(post.comments)}
+        for post in posts
+    ]

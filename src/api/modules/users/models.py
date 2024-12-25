@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Optional, List
 
-from ..posts.models import Post
+from src.api.modules.posts.models import Post
 
 from sqlmodel import SQLModel, Field, Relationship
 
