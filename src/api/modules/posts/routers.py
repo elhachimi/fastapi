@@ -69,7 +69,7 @@ def delete_post(post_id: int, session: Session = Depends(get_session)) -> Post:
 
 
 @router.get("/")
-def list_posts(session: Session = Depends(get_session)) -> Sequence[Post]:
+def list_posts(session: Session = Depends(get_session)):
     statement = select(Post)
-    results = session.exec(statement).all()
-    return results
+    posts = session.exec(statement).all()
+    return [{**post.dict(), "user": post.user} for post in posts]
