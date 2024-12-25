@@ -1,8 +1,8 @@
-from ....database.session import get_session
+from src.database.session import get_session
 from fastapi import APIRouter
 from sqlmodel import Session
 from fastapi import Depends
-from .models import User
+from src.api.modules.users.models import User
 
 
 router = APIRouter()
