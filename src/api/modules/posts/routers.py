@@ -6,7 +6,7 @@ from sqlmodel import Session, select
 from fastapi import APIRouter
 
 from src.database.session import get_session
-from src.api.modules.posts.models import Post
+from src.api.modules.posts.models import Post, PostPublic
 
 
 router = APIRouter()
@@ -68,8 +68,7 @@ def delete_post(post_id: int, session: Session = Depends(get_session)) -> Post:
 # Read a post
 
 
-@router.get("/")
+@router.get("/", response_model=Sequence[PostPublic])
 def list_posts(session: Session = Depends(get_session)):
     statement = select(Post)
-    posts = session.exec(statement).all()
-    return [{**post.dict(), "user": post.user} for post in posts]
+    return session.exec(statement).all()
